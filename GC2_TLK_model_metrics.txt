@@ -1,0 +1,23 @@
+Final model parameters, features, and metrics
+
+The best overall model for this dataset was a gradient-boosted
+Random Forest.
+
+The following settings were used for the model:
+
+gb = GradientBoostingClassifier(n_estimators=900, learning_rate = .75, max_features='sqrt', min_samples_leaf=1, min_samples_split=4, max_depth = 10)
+
+The model performance that resulted was: 
+precision    recall  f1-score   support
+
+           0       0.58      0.61      0.59       372
+           1       0.43      0.39      0.41       276
+
+    accuracy                           0.52       648
+   macro avg       0.50      0.50      0.50       648
+weighted avg       0.51      0.52      0.52       648
+
+Confusion matrix:
+[[227 145]
+ [167 109]]
+
